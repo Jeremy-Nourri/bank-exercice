@@ -41,15 +41,15 @@ public class Main {
                 switch (accountChoice) {
                     case 1:
                         CurrentAccount currentAccount = new CurrentAccount(customer);
-//                        customer.addAccount();
+                        customer.addAccount(currentAccount);
                         break;
                     case 2:
                         SavingAccount savingAccount = new SavingAccount(customer);
-//                        customer.addAccount();
+                        customer.addAccount(savingAccount);
                         break;
                     case 3:
-                        PayingAccount payingAccount = new PayingAccount(customer);
-//                        customer.addAccount();
+                       PaidAccount paidAccount = new PaidAccount(customer);
+                       customer.addAccount(paidAccount);
                         break;
                     default:
                         System.out.println("Choix invalide");
